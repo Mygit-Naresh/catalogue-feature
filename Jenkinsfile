@@ -4,4 +4,11 @@
 //     application: "nodejsVM",
 //     component: "catalogue"
 // ]
-nodejsVM()
+// nodejsVM()
+stage('1. Show all variables'){
+     steps {
+         script{            
+              showSystemVariables()
+         }
+     }
+} 
