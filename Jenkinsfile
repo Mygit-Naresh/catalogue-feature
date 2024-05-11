@@ -5,10 +5,6 @@
 //     component: "catalogue"
 // ]
 // nodejsVM()
-stage('1. Show all variables'){
-     steps {
-         script{            
-              showSystemVariables()
-         }
-     }
-} 
+ stage('1') {
+    sh "printenv" 
+ }
