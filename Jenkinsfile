@@ -5,6 +5,10 @@
 //     component: "catalogue"
 // ]
 // nodejsVM()
- stage('1') {
-    sh "printenv" 
- }
+stages {
+        stage('hello world') {
+            steps {
+                sh 'env'
+            }
+        }
+    }
